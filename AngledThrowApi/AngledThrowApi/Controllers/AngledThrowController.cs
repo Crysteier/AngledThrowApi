@@ -9,10 +9,10 @@ namespace SikmyVrhApi.Controllers
     {
         [HttpGet]
         [Route("id")]
-        public List<string> Hello()
+        public Coordinatas Hello()
         {
-            
-            return new List<string> { "Hello vilag" };
+            var result = new Coordinatas(17.01, 26.02);
+            return result;
         }
 
         [HttpGet]
